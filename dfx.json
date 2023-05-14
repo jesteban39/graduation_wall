@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "graduation_wall_backend": {
+      "main": "src/graduation_wall_backend/main.mo",
+      "type": "motoko"
+    },
+    "graduation_wall_frontend": {
+      "dependencies": [
+        "graduation_wall_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/graduation_wall_frontend/src/index.html"
+      },
+      "source": [
+        "src/graduation_wall_frontend/assets",
+        "dist/graduation_wall_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
