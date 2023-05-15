@@ -16,6 +16,9 @@ src/declarations/
 # libs
 node_modules/
 dist/
+dist
+dist-ssr
+*.local
 
 # environment variables
 .env
